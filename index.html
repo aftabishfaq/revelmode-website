@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Revelmode — IT solutions that scale with you</title>
   <meta name="description" content="Revelmode delivers ERP, web, and mobile engineering with modern cloud-native stacks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Outfit:wght@500..800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -22,6 +25,7 @@
           <ul class="nav-main">
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="index.html#who-we-are">Who we are</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="services.html">What we do</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -61,24 +65,114 @@
           <h2 class="section-title">Services we provide</h2>
           <p class="section-sub">
             From complex back-office systems to customer-facing apps, we build with maintainability
-            and measurable outcomes in mind.
+            and measurable outcomes in mind. Hover a card to see representative stacks; use the arrows to move, or let it advance automatically.
           </p>
-          <div class="cards">
-            <article class="card">
-              <div class="card-icon"><img src="assets/icons/service-erp.svg" alt="" role="presentation"></div>
-              <h3>ERP &amp; integrations</h3>
-              <p>Implementation, customization, and reliable data flows between finance, inventory, CRM, and custom tooling.</p>
-            </article>
-            <article class="card">
-              <div class="card-icon"><img src="assets/icons/service-mobile.svg" alt="" role="presentation"></div>
-              <h3>Mobile development</h3>
-              <p>Cross-platform and native-quality apps with thoughtful UX, offline-aware patterns, and secure APIs.</p>
-            </article>
-            <article class="card">
-              <div class="card-icon"><img src="assets/icons/service-web.svg" alt="" role="presentation"></div>
-              <h3>Web development</h3>
-              <p>Marketing sites, dashboards, and SaaS products—performance-tuned, accessible, and ready to scale.</p>
-            </article>
+          <div class="services-carousel" data-services-carousel aria-label="Services carousel">
+            <button type="button" class="services-btn services-btn-prev" data-services-prev aria-label="Previous services">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <div class="services-viewport">
+              <div class="services-track" data-services-track>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-erp.svg" alt="" role="presentation"></div>
+                <h3>ERP &amp; integrations</h3>
+                <p>Implementation, customization, and reliable data flows between finance, inventory, CRM, and custom tooling.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/angular.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/django.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/laravel.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-mobile.svg" alt="" role="presentation"></div>
+                <h3>Mobile development</h3>
+                <p>Cross-platform and native-quality apps with thoughtful UX, offline-aware patterns, and secure APIs.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flutter.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kotlin.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/swift.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/androidstudio.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dart.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-web.svg" alt="" role="presentation"></div>
+                <h3>Web development</h3>
+                <p>Marketing sites, dashboards, and SaaS products—performance-tuned, accessible, and ready to scale.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tailwindcss.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/graphql.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-uiux.svg" alt="" role="presentation"></div>
+                <h3>UI / UX design</h3>
+                <p>Research-backed flows, design systems, and prototypes that translate cleanly into engineering handoff.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/figma.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sketch.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/framer.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/invision.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/adobexd.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/miro.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-devops.svg" alt="" role="presentation"></div>
+                <h3>DevOps &amp; QA</h3>
+                <p>Pipelines, observability, and test automation so releases stay predictable as complexity grows.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kubernetes.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/terraform.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ansible.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jenkins.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/playwright.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="card card-service">
+                <div class="card-icon"><img src="assets/icons/service-game.svg" alt="" role="presentation"></div>
+                <h3>Game development</h3>
+                <p>Interactive experiences and prototypes—from gameplay loops to polished UI—when product storytelling needs a playful edge.</p>
+                <div class="card-stack" aria-hidden="true">
+                  <p class="card-stack-title">Technology stack</p>
+                  <ul class="card-stack-logos">
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/unity.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/csharp.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/godotengine.svg" width="28" height="28" alt=""></li>
+                    <li><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/blender.svg" width="28" height="28" alt=""></li>
+                  </ul>
+                </div>
+              </article>
+              </div>
+            </div>
+            <button type="button" class="services-btn services-btn-next" data-services-next aria-label="Next services">
+              <span aria-hidden="true">›</span>
+            </button>
           </div>
         </div>
       </section>
@@ -87,39 +181,233 @@
         <div class="wrap">
           <h2 class="section-title">Technologies we use</h2>
           <p class="section-sub">
-            We choose stacks that match your constraints. Here is a snapshot of platforms we deliver with regularly.
+            We choose stacks that match your constraints. Icons are themed to match our brand; names reflect tools we ship with regularly.
           </p>
-          <div class="tech-row">
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/laravel.svg" alt="Laravel logo" width="40" height="40">
-              <span>Laravel</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" alt="Node.js logo" width="40" height="40">
-              <span>Node.js</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" alt="React logo" width="40" height="40">
-              <span>React</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" alt="TypeScript logo" width="40" height="40">
-              <span>TypeScript</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" alt="AWS logo" width="40" height="40">
-              <span>AWS</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="Docker logo" width="40" height="40">
-              <span>Docker</span>
-            </div>
-            <div class="tech-item">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="PostgreSQL logo" width="40" height="40">
-              <span>PostgreSQL</span>
+          <div class="tech-marquee" role="presentation" aria-hidden="true">
+            <div class="tech-marquee-track">
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/laravel.svg" alt="" width="40" height="40"><span>Laravel</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" alt="" width="40" height="40"><span>Node.js</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" alt="" width="40" height="40"><span>React</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/angular.svg" alt="" width="40" height="40"><span>Angular</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" alt="" width="40" height="40"><span>TypeScript</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="" width="40" height="40"><span>Python</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/django.svg" alt="" width="40" height="40"><span>Django</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg" alt="" width="40" height="40"><span>PHP</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" alt="" width="40" height="40"><span>AWS</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="" width="40" height="40"><span>Docker</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kubernetes.svg" alt="" width="40" height="40"><span>Kubernetes</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="" width="40" height="40"><span>PostgreSQL</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/redis.svg" alt="" width="40" height="40"><span>Redis</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/androidstudio.svg" alt="" width="40" height="40"><span>Android Studio</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flutter.svg" alt="" width="40" height="40"><span>Flutter</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/unity.svg" alt="" width="40" height="40"><span>Unity</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" alt="" width="40" height="40"><span>Google Cloud</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="" width="40" height="40"><span>Microsoft</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/figma.svg" alt="" width="40" height="40"><span>Figma</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" alt="" width="40" height="40"><span>GitHub Actions</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/terraform.svg" alt="" width="40" height="40"><span>Terraform</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ansible.svg" alt="" width="40" height="40"><span>Ansible</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nginx.svg" alt="" width="40" height="40"><span>Nginx</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/graphql.svg" alt="" width="40" height="40"><span>GraphQL</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg" alt="" width="40" height="40"><span>Vue.js</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gitlab.svg" alt="" width="40" height="40"><span>GitLab</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jest.svg" alt="" width="40" height="40"><span>Jest</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/laravel.svg" alt="" width="40" height="40"><span>Laravel</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" alt="" width="40" height="40"><span>Node.js</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" alt="" width="40" height="40"><span>React</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/angular.svg" alt="" width="40" height="40"><span>Angular</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg" alt="" width="40" height="40"><span>TypeScript</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="" width="40" height="40"><span>Python</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/django.svg" alt="" width="40" height="40"><span>Django</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg" alt="" width="40" height="40"><span>PHP</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" alt="" width="40" height="40"><span>AWS</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg" alt="" width="40" height="40"><span>Docker</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kubernetes.svg" alt="" width="40" height="40"><span>Kubernetes</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="" width="40" height="40"><span>PostgreSQL</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/redis.svg" alt="" width="40" height="40"><span>Redis</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/androidstudio.svg" alt="" width="40" height="40"><span>Android Studio</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flutter.svg" alt="" width="40" height="40"><span>Flutter</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/unity.svg" alt="" width="40" height="40"><span>Unity</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" alt="" width="40" height="40"><span>Google Cloud</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="" width="40" height="40"><span>Microsoft</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/figma.svg" alt="" width="40" height="40"><span>Figma</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" alt="" width="40" height="40"><span>GitHub Actions</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/terraform.svg" alt="" width="40" height="40"><span>Terraform</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ansible.svg" alt="" width="40" height="40"><span>Ansible</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nginx.svg" alt="" width="40" height="40"><span>Nginx</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/graphql.svg" alt="" width="40" height="40"><span>GraphQL</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg" alt="" width="40" height="40"><span>Vue.js</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gitlab.svg" alt="" width="40" height="40"><span>GitLab</span></div>
+              <div class="tech-item"><img class="tech-logo-tint" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jest.svg" alt="" width="40" height="40"><span>Jest</span></div>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section id="who-we-are" data-who-root>
+        <div class="wrap who-grid">
+          <div class="who-left">
+            <h2 class="section-title">Who we are</h2>
+            <div class="who-copy">
+              <h3 class="who-dynamic-title" data-who-title>Who we are</h3>
+              <p class="who-dynamic-text" data-who-text>
+                Revelmode is a software engineering partner for teams that care about clarity as much as code.
+                We embed with product and operations stakeholders, map the messy middle between legacy systems and modern UX,
+                and ship increments you can evaluate against real business metrics—not vanity milestones.
+              </p>
+            </div>
+            <div class="who-tabs" role="tablist" aria-label="About Revelmode">
+              <button type="button" class="who-tab is-active" role="tab" aria-selected="true" data-who-tab="intro"
+                data-who-heading="Who we are"
+                data-who-copy="Revelmode is a software engineering partner for teams that care about clarity as much as code. We embed with product and operations stakeholders, map the messy middle between legacy systems and modern UX, and ship increments you can evaluate against real business metrics—not vanity milestones."
+                data-who-img="assets/illustrations/who-code.svg"
+                data-who-alt="Illustration of a development screen with code">
+                <span class="who-tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="M8 10l-2 2 2 2M11 14h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+                <span>Who we are</span>
+              </button>
+              <button type="button" class="who-tab" role="tab" aria-selected="false" data-who-tab="mission"
+                data-who-heading="Our mission"
+                data-who-copy="Our mission is to shorten the distance between a bold idea and a dependable release. We focus on transparent delivery, pragmatic architecture, and measurable uplift—whether that is revenue, throughput, or hours reclaimed for your team."
+                data-who-img="assets/illustrations/who-mission.svg"
+                data-who-alt="Illustration of rising performance bars">
+                <span class="who-tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 18V8M9 18v-6M14 18V5M19 18v-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+                <span>Our mission</span>
+              </button>
+              <button type="button" class="who-tab" role="tab" aria-selected="false" data-who-tab="strategy"
+                data-who-heading="Our strategy"
+                data-who-copy="We start with a shared map: risks, dependencies, and the smallest viable slice that proves value. Our strategy blends discovery workshops, thin vertical slices, and continuous integration so feedback reshapes the plan without derailing momentum."
+                data-who-img="assets/illustrations/who-strategy.svg"
+                data-who-alt="Illustration of a strategy mind map">
+                <span class="who-tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 5v4M12 15v4M5 12h4M15 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+                <span>Our strategy</span>
+              </button>
+              <button type="button" class="who-tab" role="tab" aria-selected="false" data-who-tab="do"
+                data-who-heading="What we do"
+                data-who-copy="Day to day, we translate goals into backlogs, interfaces, integrations, and runbooks. We pair honest estimates with proactive communication, protect production stability, and treat your customers’ trust as a constraint—not an afterthought."
+                data-who-img="assets/illustrations/who-trust.svg"
+                data-who-alt="Illustration representing trust and partnership">
+                <span class="who-tab-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M12 4l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </span>
+                <span>What we do</span>
+              </button>
+            </div>
+          </div>
+          <div class="who-visual-wrap">
+            <img class="who-visual" data-who-visual src="assets/illustrations/who-code.svg" width="400" height="320" alt="Illustration of a development screen with code">
+          </div>
+        </div>
+      </section>
+
+      <section id="delivery-models">
+        <div class="wrap">
+          <h2 class="section-title">Delivery models</h2>
+          <p class="section-sub">
+            Choose how we plug into your organization—whether you need capacity, ownership, or a focused project team.
+          </p>
+          <div class="delivery-grid">
+            <article class="delivery-card">
+              <h3>Extended teams</h3>
+              <p>Engineers and leads who join your rituals, tools, and roadmap—scaling throughput without diluting standards.</p>
+            </article>
+            <article class="delivery-card">
+              <h3>Managed teams</h3>
+              <p>A Revelmode-led squad accountable for outcomes, reporting, and delivery rhythm while you steer priorities.</p>
+            </article>
+            <article class="delivery-card">
+              <h3>Digital projects</h3>
+              <p>Fixed-scope or milestone engagements for launches, migrations, and modernization with crisp acceptance criteria.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="clients-section">
+        <div class="wrap">
+          <h2 class="section-title">Clients</h2>
+          <p class="section-sub">Organizations we have shipped alongside—placeholder marks stand in until logos are finalized.</p>
+          <div class="client-logos" aria-label="Client logos">
+            <img src="assets/placeholders/client-aurora.svg" height="40" alt="Aurora placeholder logo">
+            <img src="assets/placeholders/client-northline.svg" height="40" alt="Northline placeholder logo">
+            <img src="assets/placeholders/client-pulsegrid.svg" height="40" alt="Pulsegrid placeholder logo">
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="wrap">
+          <h2 class="section-title" id="testimonials-heading">What our clients say</h2>
+          <p class="section-sub">Short quotes from partners—use arrows or dots to explore.</p>
+          <div class="slider testimonial-slider" data-testimonial-slider>
+            <div class="slider-viewport">
+              <button type="button" class="slider-btn slider-btn-prev" data-slider-prev aria-label="Previous testimonial">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <div class="testimonial-track" data-slider-track>
+                <figure class="testimonial-slide is-active">
+                  <div class="testimonial-brand">
+                    <img src="assets/placeholders/wecreate.svg" height="36" alt="WeCreate">
+                  </div>
+                  <blockquote>
+                    <p>“Revelmode brought structure to a complex integration and kept our launch date realistic. Weekly demos made it easy to align stakeholders—we would work with them again without hesitation.”</p>
+                  </blockquote>
+                  <figcaption class="testimonial-author">Placeholder name, Product lead at WeCreate</figcaption>
+                </figure>
+                <figure class="testimonial-slide">
+                  <div class="testimonial-brand">
+                    <img src="assets/placeholders/client-aurora.svg" height="36" alt="Aurora">
+                  </div>
+                  <blockquote>
+                    <p>“Placeholder testimonial: the team shipped a stable MVP in six weeks and documented everything so our internal engineers could take over smoothly.”</p>
+                  </blockquote>
+                  <figcaption class="testimonial-author">Alex Rivera, CTO at Aurora (sample)</figcaption>
+                </figure>
+                <figure class="testimonial-slide">
+                  <div class="testimonial-brand">
+                    <img src="assets/placeholders/client-northline.svg" height="36" alt="Northline">
+                  </div>
+                  <blockquote>
+                    <p>“Placeholder testimonial: automation around releases cut our regression cycle in half. Communication was direct and technical depth was obvious from day one.”</p>
+                  </blockquote>
+                  <figcaption class="testimonial-author">Jordan Lee, VP Engineering at Northline (sample)</figcaption>
+                </figure>
+              </div>
+              <button type="button" class="slider-btn slider-btn-next" data-slider-next aria-label="Next testimonial">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+            <div class="slider-dots" data-slider-dots></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" aria-labelledby="partners-heading">
+        <div class="wrap">
+          <h2 class="section-title" id="partners-heading">Our partners</h2>
+          <p class="section-sub">Ecosystem and alliance placeholders—swap in real marks when agreements are ready.</p>
+          <div class="partners-marquee" role="presentation">
+            <div class="partners-track">
+              <img src="assets/placeholders/partner-1.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-2.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-3.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-4.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-1.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-2.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-3.svg" height="36" alt="">
+              <img src="assets/placeholders/partner-4.svg" height="36" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="cta-wrap">
+        <div class="wrap">
           <div class="cta-band">
             <h2>Ready to scope your next release?</h2>
             <p>Tell us about timelines, integrations, and success metrics—we will respond with a concrete plan.</p>
@@ -144,6 +432,11 @@
           <ul>
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="index.html#who-we-are">Who we are</a></li>
+            <li><a href="index.html#delivery-models">Delivery models</a></li>
+            <li><a href="index.html#clients">Clients</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#partners">Partners</a></li>
           </ul>
         </div>
         <div>
@@ -162,6 +455,7 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+  <script src="assets/landing.js" defer></script>
   <script src="assets/bg-canvas.js" defer></script>
 </body>
 </html>
