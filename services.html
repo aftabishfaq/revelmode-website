@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What we do — Revelmode</title>
+  <meta name="description" content="Revelmode services: ERP, integrations, web applications, and mobile engineering.">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" width="120" height="66" alt="Revelmode">
+          <span>Revelmode</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-main">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html" aria-current="page">What we do</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary" href="contact.html">Start a project</a>
+      </div>
+    </header>
+
+    <main class="wrap main-simple">
+      <p class="eyebrow">Capabilities</p>
+      <h1>What we do for product and operations teams</h1>
+      <p class="lead">
+        Every engagement starts with outcomes: fewer manual steps, faster releases, clearer ownership, and
+        systems that survive the next hire or the next acquisition.
+      </p>
+      <section style="border-top:none;padding-top:0;padding-bottom:0;">
+        <h2 class="section-title" style="font-size:1.35rem;">Delivery patterns</h2>
+        <p class="section-sub" style="margin-bottom:1rem;">
+          Typical workstreams we lead or augment.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon"><img src="assets/icons/service-erp.svg" alt="" role="presentation"></div>
+            <h3>ERP &amp; data platforms</h3>
+            <p>Blueprinting, implementation support, integration buses, reporting, and safe migration paths between vendors.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><img src="assets/icons/service-web.svg" alt="" role="presentation"></div>
+            <h3>Web products &amp; portals</h3>
+            <p>Design systems, admin consoles, marketing sites, and SaaS surfaces engineered for performance and accessibility.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><img src="assets/icons/service-mobile.svg" alt="" role="presentation"></div>
+            <h3>Mobile programs</h3>
+            <p>Field tools, customer apps, and device-aware experiences with pragmatic release management.</p>
+          </article>
+        </div>
+      </section>
+      <p class="lead" style="margin-top:2rem;margin-bottom:0;">
+        <a class="btn btn-primary" href="contact.html">Discuss scope</a>
+        <a class="btn btn-ghost" href="index.html" style="margin-left:0.5rem;">Back to home</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services overview</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Revelmode</h3>
+          <p style="margin:0;font-size:0.92rem;color:var(--muted);max-width:22rem;">
+            IT engineering focused on durable systems, transparent communication, and outcomes you can measure.
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        © <span id="y"></span> Revelmode. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/bg-canvas.js" defer></script>
+</body>
+</html>

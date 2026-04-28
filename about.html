@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About us — Revelmode</title>
+  <meta name="description" content="Learn how Revelmode approaches delivery, governance, and long-term partnerships.">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" width="120" height="66" alt="Revelmode">
+          <span>Revelmode</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-main">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+            <li><a href="about.html" aria-current="page">About us</a></li>
+            <li><a href="services.html">What we do</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary" href="contact.html">Start a project</a>
+      </div>
+    </header>
+
+    <main class="wrap main-simple">
+      <p class="eyebrow">About Revelmode</p>
+      <h1>We build software you can operate, explain, and extend.</h1>
+      <p class="lead">
+        Revelmode is an IT engineering partner focused on pragmatic architecture, clear documentation,
+        and delivery rhythms that keep business and engineering aligned. We favor boring technology where it
+        reduces risk, and we reach for sharper tools when the product demands it.
+      </p>
+      <p class="lead">
+        Whether you are modernizing an ERP footprint, launching a customer-facing web product, or shipping a
+        mobile companion app, we embed with your team to turn constraints into a roadmap you can execute on.
+      </p>
+      <p class="lead" style="margin-bottom:0;">
+        <a class="btn btn-primary" href="contact.html">Work with us</a>
+        <a class="btn btn-ghost" href="index.html" style="margin-left:0.5rem;">Back to home</a>
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services overview</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#technologies">Technologies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Revelmode</h3>
+          <p style="margin:0;font-size:0.92rem;color:var(--muted);max-width:22rem;">
+            IT engineering focused on durable systems, transparent communication, and outcomes you can measure.
+          </p>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        © <span id="y"></span> Revelmode. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/bg-canvas.js" defer></script>
+</body>
+</html>
